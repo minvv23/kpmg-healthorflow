@@ -1,9 +1,11 @@
 # KPMG Healthorflow
 Team 'Healthorflow' chatbot development code for KPMG Ideation Challenge
-## 1. Team Members
-1. Yun-J : Himalaya Man
-2. Jun-Kyu : Math Boy
-3. set.seed() : Wide Shoulder
-4. Hongleung Cha-EunWoo : Cutie Sexy Dynamite
-5. I'm Sorry Jinha : He is from SulEui
-6. You-Gene : Github Authority Two Weeks Apsu!
+
+## 1. 팀원
+1. 강태영 (KAIST 경영공학과 석사과정) : NLP 임베딩 생성
+2. 김윤재 (울산대학교 의학과) : 트리형 챗봇 문항 설계
+3. 김진하 (서울대학교 의학과) : 트리형 챗봇 문항 설계
+4. 심너울 (서강대학교 심리학과) : 웹 프론트엔드 개발
+5. 장준규 (KAIST 경영공학과 석사과정 ) : 웹 백엔드 및 ML 분류 알고리즘
+6. 진승욱 (KAIST 경영공학과 석사과정) : 네이버 지식iN 웹 크롤링
+7. 황유진 (KAIST 경영공학과 석사과정) : HiDoc 웹 크롤링

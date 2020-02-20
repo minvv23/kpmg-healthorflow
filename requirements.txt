@@ -1,0 +1,37 @@
+# Library dependencies for the python code.  You need to install these with
+# `pip install -r requirements.txt` before you can run this.
+
+#### ESSENTIAL LIBRARIES ####
+
+keras==2.2.4
+tensorflow==1.14.0
+scikit-learn
+numpy
+
+
+#### Using Local Server ####
+flask
+
+#### Using query interpreter ####
+itertools
+sentencepiece
+soyspacing
+git+git://github.com/lovit/wordpiecemodel.git
+
+
+#### Using Tree Maker ####
+csv
+json
+collections
+
+
+### Using Web Crawling ####
+bs4
+requests
+time
+re
+urllib
+selenium
+sqlite3
+
+

@@ -14,7 +14,7 @@ Team 'Healthorflow' development code for KPMG Ideation Challenge
 ### Web Dev.
 - 장준규 (KAIST 경영공학 석사과정)
 
-### ByungTae Lee's ByunTae Student's Web Scraping Note
+### 1.Crawling: Hi-Doc
 환자들이 증상에 대해 free-text로 질문한 내용과 이에 해당하는 주증상을 labeling 하고자 하였습니다. 따라서 10가지 증상별로 각각 query 검색을 한 후, 검색 결과로 나오는 질문들을 해당 query의 학습 내용으로 사용하였습니다.  
 
 10가지 query는 ‘가슴이 두근’, ‘가슴이 아파 / 흉통’, ‘기침’, ‘두통’, ‘배가 아파 / 복통’, ‘변비’, ‘설사’, ‘어지러워’, ‘열이 나’, ‘콧물’입니다. 하나의 질문에 관한 내용은 ‘주요증상’, ‘웹 주소’, ‘질문 제목’, ‘질문내용’, ‘답변내용’으로 정리했습니다.  

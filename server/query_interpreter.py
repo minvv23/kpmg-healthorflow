@@ -43,10 +43,10 @@ def kana_to_hangul_converter(x) :
     return output
 
 spacing_model = CountSpace()
-spacing_model.load_model('healthnews_spacing_model', json_format=False)
+spacing_model.load_model('./embedding/healthnews_spacing_model', json_format=False)
 sp = spm.SentencePieceProcessor()
 sp.Load('healthcare_hanbon.model')
-ftmodel = FastText.load('fasttext_healthqna.model')
+ftmodel = FastText.load('./embedding/fasttext_healthqna.model')
 def ft_dimension_retriever(x) :
     try :
         return ftmodel.wv[x]
@@ -59,20 +59,7 @@ def final_meanvector_retriever(x) :
 classifier = joblib.load('ensembled_classifier.pkl')
 
 def symptom_classifier(x) :
-    if '콜록' in str(x) :
-        symptom = '기침'
-    elif '쿨럭' in str(x) :
-        symptom = '기침'
-    elif '에취에취' in str(x) :
-        symptom = '기침'
-    elif '물똥' in str(x) :
-        symptom = '설사'
-    elif '뜨겁' in str(x) :
-        symptom = '열발생'
-    elif '뜨거' in str(x) :
-        symptom = '열발생'
-    else :
-        symptom = classifier.predict(pd.DataFrame(final_meanvector_retriever(str(x))).T)[0]        
+    symptom = classifier.predict(pd.DataFrame(final_meanvector_retriever(str(x))).T)[0]        
     return symptom
 
 

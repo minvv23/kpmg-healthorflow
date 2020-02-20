@@ -9,8 +9,8 @@ Team 'Healthorflow' chatbot development code for KPMG Ideation Challenge
 - 강태영 (KAIST 경영공학 석사과정)
 - 장준규 (KAIST 경영공학 석사과정)
 ### Chatbot Questionnaire Design
-- 김윤재 (울산대 의예)
-- 김진하 (서울대 의예)
+- 김윤재 (울산대 의학)
+- 김진하 (서울대 의학)
 ### Web Development
 - 심너울 (서강대 심리학)
 - 장준규 (KAIST 경영공학 석사과정)

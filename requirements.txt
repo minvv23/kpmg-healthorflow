@@ -16,7 +16,7 @@ flask
 itertools
 sentencepiece
 soyspacing
-git+git://github.com/lovit/wordpiecemodel.git
+
 
 
 #### Using Tree Maker ####

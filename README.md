@@ -1,5 +1,5 @@
 # KPMG Healthorflow
-Team 'Healthorflow' chatbot development code for KPMG Ideation Challenge
+Team 'Healthorflow' development code for KPMG Ideation Challenge
 
 ## Task & Team Members
 ### Crawling

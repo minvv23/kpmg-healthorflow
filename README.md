@@ -12,9 +12,5 @@ Team 'Healthorflow' chatbot development code for KPMG Ideation Challenge
 - 김윤재 (울산대 의예)
 - 김진하 (서울대 의예)
 ### Web Development
-- 심너울 (서강대학교 심리학)
+- 심너울 (서강대 심리학)
 - 장준규 (KAIST 경영공학 석사과정)
-
-## SeedHem, the Cutie Sexy Dynamite of KAIST
-### Wide Shoulder
-### Handsome Face

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class='bg-light'>
+    <div class="container">
+        <div class="pt-5 pb-2 text-center">
+            <h2>Prototype</h2>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div class="container">
+                    <form>
+                        <div class="form-group">
+                            <label for="main-symptom">1차 증상 입력</label>
+                            <textarea id="main-symptom" rows="3" class="form-control"
+                                placeholder="증상을 입력하세요."></textarea>
+                        </div>
+                        <button id='main-symptom-button' class='btn btn-primary btn-block'>제출</button>
+                    </form>
+
+                    <form id='questions' class='mt-3'>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container">
+            <button class='btn btn-danger' id='reset'>리셋!</button>
+            <form class='form-inline' id='new-question'>
+                <input type="text" id="input-question" placeholder='새 질문'>
+                <button class='btn btn-secondary'>만들기</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="/eel.js"></script>
+
+<script>
+    let data = {};
+    data.questions = [];
+
+    let mainSymptom;
+    let mainSymptomButton;
+    let questions;
+    let isMainSymptomSubmitted = false;
+
+    $(document).ready(function () {
+        mainSymptom = $('#main-symptom');
+        questions = $('#questions');
+        mainSymptomButton = $('#main-symptom-button');
+
+        //테스트용 버튼
+        $('#reset').click(function () {
+            alert('reset!');
+            reset();
+        })
+
+        $('#new-question').submit(function () {
+            event.preventDefault();
+            let target = $('#input-question');
+            if (!isMainSymptomSubmitted || !target.val()) {
+                alert('주증상이 제출되지 않았거나 질문이 비어있음');
+                return;
+            }
+            addQuestion(target.val());
+            target.val('');
+        })
+
+        //주 증상 제출 버튼
+        mainSymptomButton.click(function () {
+            event.preventDefault();
+            if (isMainSymptomSubmitted) return;
+            if (!($(mainSymptom).val())) {
+                alert('주요 증상이 비어 있음.');
+                return;
+            }
+            isMainSymptomSubmitted = true;
+            setMainSymptom($(mainSymptom).val());
+            toggleMainSymptom();
+        })
+
+        //전체 초기화
+        let reset = function () {
+            data = {};
+            data.questions = [];
+            mainSymptom.val('');
+            questions.empty();
+            toggleMainSymptom();
+            isMainSymptomSubmitted = false;
+        }
+    });
+
+
+    let setMainSymptom = function (str) {
+        data.mainSymptom = str;
+    }
+
+    let toggleMainSymptom = function () {
+        mainSymptom.attr('readonly', !$(mainSymptom).prop('readonly'));
+        mainSymptomButton.attr('disabled', !$(mainSymptomButton).prop('disabled'));
+    }
+
+    let addQuestion = function (question) {
+        let num = data.questions.length;
+        data.questions.push({
+            query: question,
+            answer: ''
+        })
+        questions.append(
+            "<form class='form-group' id='question" + num + "'>" +
+            "<label>" + question + "</label>" +
+            "<div class='input-group'>" +
+            "<input type='text' class='form-control' placeholder='답변을 입력하세요.' id='question-input" + num + "'>" +
+            "<button class='btn btn-outline-secondary question-input-button' id='question-input-button" + num +
+            "'>입력</button>" +
+            "</div>" + '</form>'
+        );
+
+        let questionDiv = $('#question' + num);
+        let input = $('#question-input' + num);
+        let btn = $('#question-input-button' + num);
+
+        btn.click(function () {
+            event.preventDefault();
+            let temp = input.val();
+            if (!temp) {
+                alert('답변이 비어 있음');
+                return;
+            }
+            data.questions[num].answer = temp;
+            input.attr('disabled', 'disabled');
+            console.log(data);
+        })
+    }
+</script>
+
+</html>

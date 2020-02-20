@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#btn").click(function test() {
+          n=eel.handle_input($("#inp").val());
+          return n
+                  });
+      });
+
+    </script>
+    <script type="text/javascript">
+      $(function() {
+        $("#btn").click(function() {
+          eel.print(n);
+                  });
+      });
+
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <input type="text" id="inp" placeholder="Write anything" />
+      <input type="button" id="btn" class="btn btn-primary" value="Submit" />
+      <textarea id="main-symptom" rows="3" class="form-control"
+                                placeholder="증상을 입력하세요.">
+      </textarea>
+    </div>
+  </body>
+</html>

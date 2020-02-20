@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>My Page</title>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script>
+            async function getTime() {
+                let value = await eel.getTime()();
+                alert(value);
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="getTime()">Click to get time</button>
+    </body>
+<html>

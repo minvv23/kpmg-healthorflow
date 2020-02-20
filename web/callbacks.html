@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Callbacks Demo</title>
+
+  <script type="text/javascript" src="/eel.js"></script>
+
+
+  <script type="text/javascript">
+    $(function () {
+      let btn = $('#btn');
+      let inp = $('#inp');
+
+      btn.click(function() {
+        let str = inp.val();
+        eel.handle_input(str);
+        alert(str);
+        return str;
+      })
+    });
+
+
+    eel.expose(js_random);
+
+    function js_random() {
+      return Math.random();
+    }
+
+    function print_num(n) {
+      console.log('Got this from Python: ' + n);
+    }
+
+    // Call Python function, and pass explicit callback function
+    eel.py_random()(print_num);
+
+    // Do the same with an inline callback
+    eel.py_random()(n => console.log('Got this from Python: ' + n));
+  </script>
+</head>
+
+<body>
+  <input type="text" id="inp" placeholder="Write anything" />
+  <input type="button" id="btn" class="btn btn-primary" value="Submit" />
+</body>
+
+</html>

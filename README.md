@@ -12,5 +12,4 @@ Team 'Healthorflow' development code for KPMG Ideation Challenge
 - 김윤재 (울산대 의학)
 - 김진하 (서울대 의학)
 ### Web Dev.
-- 심너울 (서강대 심리학)
 - 장준규 (KAIST 경영공학 석사과정)

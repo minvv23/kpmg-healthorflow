@@ -2,7 +2,7 @@
 Team 'Healthorflow' chatbot development code for KPMG Ideation Challenge
 
 ## Task & Team Members
-### Data Crawling
+### Crawling
 - 진승욱 (KAIST 경영공학 석사과정)
 - 황유진 (KAIST 경영공학 석사과정)
 ### NLP & ML

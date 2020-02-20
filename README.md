@@ -1,7 +1,7 @@
 # KPMG Healthorflow
 Team 'Healthorflow' chatbot development code for KPMG Ideation Challenge
 
-## 1. 팀원
+## 팀원
 1. 강태영 (KAIST 경영공학과 석사과정) : NLP 임베딩 생성
 2. 김윤재 (울산대학교 의학과) : 트리형 챗봇 문항 설계
 3. 김진하 (서울대학교 의학과) : 트리형 챗봇 문항 설계

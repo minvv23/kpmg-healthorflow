@@ -21,15 +21,9 @@ Team 'Healthorflow' development code for KPMG Ideation Challenge
 검색 쿼리(query)로 '가슴이 두근', '가슴이 아파' / '두통', '어지러워', '머리가 아파' 등을 입력한 후 이에 대응되는 질문들의 텍스트 본문을 수집하는 형태로 데이터 수집이 진행되었습니다. 각 쿼리(query)에 대해 약 5,000개의 질의응답 데이터를 수집할 수 있었으며, 활용한 툴은 *BeautifulSoup*과 *Selenium*입니다. 수집 코드 및 결과 데이터는 *web_crawling* 폴더에서 확인할 수 있습니다.
 
 ### 3. 머신러닝을 활용한 분류모델 (Query Prediction Model with Machine Learning)
+환자가 입력한 텍스트를 앞의 방식을 통해 임베딩 벡터로 변환한 후, 10가지 주증상 중 하나로 분류하는 다중클래스 분류 모델(multiclass classification model)은 아래와 같은 방식으로 개발되었습니다. 기초 모델(baseline)로는 부스팅 알고리즘 중 하나인 XGBoosts를 활용했으며, 이에 베이지언 최적화(Bayesian Optimization)를 추가한 후 최종적으로는 심층신경망(Deep Neural Network) 모형과 앙상블하여 최종 모델을 선정했습니다. 분류 알고리즘 코드는 *classifier* 폴더에서 확인할 수 있습니다.
 
-증상분류모델은 환자가 입력한 쿼리를 바꾼 임베딩 벡터를 주증상 10가지 중 하나로 multiclassify 하는 모델입니다.
-
-
-증상분류 모델은 Base Model은 XGBoost 모델을 사용하였으며
-Bayesian optimization을 통해 optimize 된 모델을 찾은 뒤 DNN Model과 앙상블을 하여 최종 모델을 선정했습니다.
-
-
-주요 모델의 Accuracy는 다음과 같습니다.
+주요 모델의 정확도는 아래와 같으며 최종 분류 모델의 성능은 F1-Score 92.4%입니다.
 
 Model                                     | F1-Score        |
 ----------------------------------------- | :-------------: | 

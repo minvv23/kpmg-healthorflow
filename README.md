@@ -24,9 +24,9 @@ Team 'Healthorflow' development code for KPMG Ideation Challenge
 (작성예정)
 
 ### 3. 머신러닝을 활용한 분류모델 (Query Prediction Model with Machine Learning)
-환자가 입력한 텍스트를 앞의 방식을 통해 임베딩 벡터로 변환한 후, 10가지 주증상 중 하나로 분류하는 다중클래스 분류 모델(multiclass classification model). 기초 모델(baseline)로는 부스팅 알고리즘 중 하나인 XGBoosts를 활용했으며, 이에 베이지언 최적화(Bayesian Optimization)를 추가한 후 최종적으로는 심층신경망(Deep Neural Network) 모형과 앙상블하여 최종 모델을 선정했습니다. 분류 알고리즘 코드는 *classifier* 폴더에서 확인할 수 있습니다.
+환자가 입력한 텍스트를 앞의 방식을 통해 임베딩 벡터로 변환한 후, 10가지 주증상 중 하나로 분류하는 다중클래스 분류 모델(multiclass classification model). 기초 모델(baseline)로는 부스팅 알고리즘 중 하나인 **XGBoost**를 활용했으며, 이에 베이지언 최적화(Bayesian Optimization)를 추가한 후 최종적으로는 심층신경망(Deep Neural Network) 모형과 앙상블하여 최종 모델을 선정했습니다. 분류 알고리즘 코드는 *classifier* 폴더에서 확인할 수 있습니다.
 
-주요 모델의 정확도는 아래와 같으며 최종 분류 모델의 성능은 F1-Score 92.4%입니다.
+주요 모델의 정확도는 아래와 같으며 최종 분류 모델의 성능은 **F1-Score 92.4%**입니다.
 
 Model                                     | F1-Score        |
 ----------------------------------------- | :-------------: | 

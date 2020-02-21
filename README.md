@@ -28,11 +28,11 @@ Team 'Healthorflow' development code for KPMG Ideation Challenge
 
 주요 모델의 정확도는 아래와 같으며 최종 분류 모델의 성능은 **F1-Score 92.4**입니다.
 
-Model                                     | F1-Score        |
------------------------------------------ | :-------------: | 
-XGBoost                                   | 81.2%           | 
-XGBoost with Bayesian Optimization        | 89.2%           | 
-Ensembled ML Model with Optimized XGBoost | 92.4%           | 
+Model                                        | F1-Score        |
+-------------------------------------------- | :-------------: | 
+XGBoost                                      | 81.2%           | 
+XGBoost with Bayesian Optimization           | 89.2%           | 
+Ensembled Model with DNN & Optimized XGBoost | **92.4%**       | 
 
 ### 4. 트리형 챗봇 문항 개발 (Rule Based Chatbot Questionnaire Development)
 (작성예정)

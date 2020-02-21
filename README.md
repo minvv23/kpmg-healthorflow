@@ -24,7 +24,7 @@
 적은 컴퓨팅 자원으로도 빠르게 임베딩을 계산하고, 또 온라인 접수 시에 발생하기 쉬운 오타에도 유연할 수 있는 방향으로 한글 임베딩을 계산하였습니다. 우선 **자모(subcharacters)** 단위로 활자들을 분리한 후 (ex. 두통 -> ㄷㅜEㅌㅗㅇ),  단어를 구성하는 하위 어휘들(subwords) N-gram에 대해 임베딩을 학습하는 **FastText**를 적용하였습니다. 학습된 임베딩의 전체 차원은 200차원입니다.
 
 ### 3. 머신러닝을 활용한 분류모델 (Query Prediction Model with Machine Learning)
-환자가 입력한 텍스트를 앞의 방식을 통해 임베딩 벡터로 변환한 후, 10가지 주증상 중 하나로 분류하는 다중클래스 분류 모델(multiclass classification model). 기초 모델(baseline)로는 부스팅 알고리즘 중 하나인 **XGBoost**를 활용했으며, 이에 **베이지언 최적화(Bayesian Optimization)**를 추가한 후 최종적으로는 **심층신경망(Deep Neural Network)** 모형과 앙상블하여 최종 모델을 선정했습니다. 분류 알고리즘 코드는 *classifier* 폴더에서 확인할 수 있습니다.
+환자가 입력한 텍스트를 앞의 방식을 통해 임베딩 벡터로 변환한 후, 10가지 주증상 중 하나로 분류하는 다중클래스 분류 모델(multiclass classification model). 기초 모델(baseline)로는 부스팅 알고리즘 중 하나인 **XGBoost**를 활용했으며, 이에 **베이지언 최적화(Bayesian Optimization)** 를 추가한 후 최종적으로는 **심층신경망(Deep Neural Network)** 모형과 앙상블하여 최종 모델을 선정했습니다. 분류 알고리즘 코드는 *classifier* 폴더에서 확인할 수 있습니다.
 
 주요 모델의 정확도는 아래와 같으며 최종 분류 모델의 성능은 **F1-Score 92.4**입니다.
 

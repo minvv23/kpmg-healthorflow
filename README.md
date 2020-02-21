@@ -1,5 +1,5 @@
 # KPMG Healthorflow
-![image](./image/logo_healthorflow.png){: width='50%' height='50%'}
+![image](./image/logo_healthorflow.png){: width="50%" height="50%"}
 <!-- <center><img src="./image/logo_healthorflow.png" height="300"></center> -->
 자연어처리 기반 챗봇을 활용한 '더 똑똑한' 의학 커뮤니케이션
 

@@ -4,7 +4,7 @@
 #### ESSENTIAL LIBRARIES ####
 
 keras==2.2.4
-tensorflow==1.15.2
+tensorflow>=1.15.2
 scikit-learn
 numpy
 
@@ -16,7 +16,7 @@ flask
 itertools
 sentencepiece
 soyspacing
-git+git://github.com/lovit/wordpiecemodel.git
+
 
 
 #### Using Tree Maker ####

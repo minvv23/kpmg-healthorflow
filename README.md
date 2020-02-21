@@ -1,5 +1,5 @@
 # KPMG Healthorflow
-![image](https://user-images.githubusercontent.com/24493357/75030048-a5420500-54e6-11ea-9b05-30e8e9072b7e.png)
+![image](./image/logo_healthorflow.png)
 자연어처리 기반 챗봇을 활용한 '더 똑똑한' 의학 커뮤니케이션
 
 ## Team Members & Role

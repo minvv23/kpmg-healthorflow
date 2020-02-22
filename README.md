@@ -33,7 +33,7 @@
 
 ## Demo
 <center><img src="./image/demo.gif" width="75%" height="75%"></center>
-
+<!-- 천재 수학소년이 데모 페이지 링크를 공유할 자리 -->
 
 ## Task Description
 ### 1. 데이터 수집(Data Scraping)

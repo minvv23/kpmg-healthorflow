@@ -32,7 +32,7 @@
 현재, 삼성서울병원과 컨택해 예약 자동화 관련 서비스 개발을 논의 중에 있습니다.
 
 ## Demo
-<center><img src="./image/demo.gif" width="50%" height="50%"></center>
+<center><img src="./image/demo.gif" width="75%" height="75%"></center>
 
 
 ## Task Description

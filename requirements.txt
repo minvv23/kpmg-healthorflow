@@ -13,16 +13,16 @@ numpy
 flask
 
 #### Using query interpreter ####
-itertools
+#itertools
 sentencepiece
 soyspacing
 
 
 
 #### Using Tree Maker ####
-csv
-json
-collections
+#csv
+#json
+#collections
 
 
 ### Using Web Crawling ####

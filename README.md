@@ -2,7 +2,7 @@
 <!-- ![image](./image/logo_healthorflow.png){: width="50%" height="50%"} -->
 <center><img src="./image/logo_healthorflow.png" width="50%" height="50%"></center>
 자연어처리 기반 챗봇을 활용한 '더 똑똑한' 의학 커뮤니케이션  
-
+  
 
 (서비스 데모 웹페이지 : http://ad2d969e.ngrok.io)
 

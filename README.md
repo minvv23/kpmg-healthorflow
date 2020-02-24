@@ -1,9 +1,9 @@
 # KPMG Healthorflow
 <!-- ![image](./image/logo_healthorflow.png){: width="50%" height="50%"} -->
 <center><img src="./image/logo_healthorflow.png" width="50%" height="50%"></center>
-자연어처리 기반 챗봇을 활용한 '더 똑똑한' 의학 커뮤니케이션
+자연어처리 기반 챗봇을 활용한 '더 똑똑한' 의학 커뮤니케이션  
 
-http://ad2d969e.ngrok.io 
+서비스 데모 웹사이트 : http://ad2d969e.ngrok.io 
 
 ## Introduction
 팀 `Healthorflow`는 대형 병원의 고질적인 문제인 **비효율적인 예약 및 진료/대기 시스템**에서 낭비되는 시간을 줄이기 위해 개발된 서비스입니다.  

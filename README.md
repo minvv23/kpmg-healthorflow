@@ -78,4 +78,4 @@ Ensembled Model with DNN & Optimized XGBoost | **92.4%**       |
 - 김진하 (서울대 의학)
 ### Web Development
 - 장준규 (KAIST 경영공학 석사과정)
-- 심너울 (서강대학교 
+- 심너울 (서강대학교 심리학)
